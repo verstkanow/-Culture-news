@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@100;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@100;300;400;500;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -141,7 +141,7 @@ html {
 
 .wrapper .header .header__title {
   text-align: center;
-  margin-top: 4.166%;
+  margin-top: 5.166%;
 }
 
 .wrapper .header .header-body {
@@ -151,32 +151,34 @@ html {
 }
 
 .wrapper .header .header-body .header-body__title {
-  font-size: calc(22px + 50 * ((100vw - 320px) / 1120));
+  font-size: calc(22px + 35 * ((100vw - 320px) / 1120));
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 12.95%;
 }
 
 .wrapper .header .header-body .header-body__text {
   font-size: calc(12px + 2 * ((100vw - 320px) / 1120));
-  line-height: 21px;
+  line-height: 23px;
   text-align: center;
   color: #ffffff;
-  margin: 9.65% auto 3.33%;
-  max-width: 456px;
+  margin: 0 auto;
+  max-width: 459px;
+  letter-spacing: -0.5px;
 }
 
 .wrapper .header .header-body .header-body__icon {
   margin: 0 auto;
-  padding: 3.194% 0 2.22%;
+  padding: 3.194% 0 3.22%;
   display: block;
   max-width: 55px;
   min-height: 55px;
 }
 
 .wrapper .header .header__menu {
-  margin: 3.197% 0;
+  margin: 4.197% 0;
 }
 
 .wrapper .menu__item {
@@ -195,7 +197,7 @@ html {
   font-weight: bold;
   font-size: 17px;
   letter-spacing: 2px;
-  margin: 3.055% 0 1.388%;
+  margin: 4.055% 0 0;
 }
 
 .reviews .reviews__content {
@@ -214,7 +216,6 @@ html {
   margin-top: 1.388%;
 }
 
-.reviews .reviews__column .reviews__text:hover,
 .reviews .reviews__column .reviews__subtitle:hover {
   color: #ff7931;
 }
@@ -242,14 +243,10 @@ html {
   line-height: 150%;
 }
 
-.reviews .reviews__subtitle_active {
-  color: #ff7931;
-}
-
 .ticket {
-  background-image: -webkit-radial-gradient(circle, #ffffff 353px, #f7f7f7 353px);
-  background-image: -o-radial-gradient(circle, #ffffff 353px, #f7f7f7 353px);
-  background-image: radial-gradient(circle, #ffffff 353px, #f7f7f7 353px);
+  background-image: -webkit-radial-gradient(circle, #ffffff 45%, #f7f7f7 45%);
+  background-image: -o-radial-gradient(circle, #ffffff 45%, #f7f7f7 45%);
+  background-image: radial-gradient(circle, #ffffff 45%, #f7f7f7 45%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,12 +259,16 @@ html {
           align-items: center;
   min-height: 556px;
   margin-top: 3.6%;
+  margin-bottom: 2.7%;
 }
 
-.ticket span {
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  min-width: 100px;
-  margin-top: 6.2%;
+.ticket .ticket__text::after {
+  content: "";
+  display: block;
+  opacity: 0.2;
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  margin: 6.2% auto 0;
+  max-width: 100px;
 }
 
 .ticket .ticket__row {
@@ -295,7 +296,7 @@ html {
   font-family: Playfair Display;
   font-style: normal;
   font-weight: 900;
-  font-size: calc(18px + 5 * ((100vw - 320px) / 1120));
+  font-size: calc(18px + 3 * ((100vw - 320px) / 1120));
   line-height: 31px;
   margin-top: 6.23%;
 }
@@ -308,7 +309,8 @@ html {
   font-size: calc(12px + 2 * ((100vw - 320px) / 1120));
   max-width: 370px;
   text-align: center;
-  margin-top: 2.59%;
+  margin-top: 1.09%;
+  letter-spacing: -0.3px;
 }
 
 .ticket .button:hover {
